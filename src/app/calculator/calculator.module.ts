@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
-import { ThemeComponent } from './pages/theme/theme.component';
-import { NumbersComponent } from './pages/numbers/numbers.component';
-import { KeysComponent } from './pages/keys/keys.component';
 import { HomeComponent } from './pages/home/home.component';
+import { KeysComponent } from './pages/keys/keys.component';
+import { NumbersComponent } from './pages/numbers/numbers.component';
+import { ThemeComponent } from './pages/theme/theme.component';
 
 @NgModule({
   declarations: [
-    ThemeComponent,
-    NumbersComponent,
-    KeysComponent,
     HomeComponent,
+    KeysComponent,
+    NumbersComponent,
+    ThemeComponent,
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule],
   exports: [HomeComponent],
 })
 export class CalculatorModule {}
