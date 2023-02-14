@@ -1,0 +1,16 @@
+.number {
+  height: 100%;
+  padding: 35px;
+  background-color: var(--bg-screen);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .number__text {
+    text-align: end;
+    font-size: 3.7rem;
+    line-height: 100%;
+    color: var(--text);
+  }
+}

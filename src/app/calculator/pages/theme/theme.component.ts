@@ -1,18 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-theme',
+  templateUrl: './theme.component.html',
+  styleUrls: ['./theme.component.scss'],
 })
-export class AppComponent {
-  title = 'calculator-app';
+export class ThemeComponent {
+  changeTheme(id: string): void {
+    const theme = Number(id);
 
-  test(id: number): void {
     const claseActual = document.body.classList[0];
     document.body.classList.remove(claseActual);
 
-    switch (id) {
+    switch (theme) {
       case 1:
         document.body.classList.add('theme-dark');
         break;

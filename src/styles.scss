@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  //* THEME DARK
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-toggle: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+  --key-bg: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-bg-toggle: hsl(6, 63%, 50%);
+  --key-shadow-dark: hsl(6, 70%, 34%);
+  --key-bg-light: hsl(30, 25%, 89%);
+  --key-shadow-grayish: hsl(28, 16%, 65%);
+  --text: hsl(221, 14%, 31%);
+  --very-dark-blue: hsl(198, 20%, 13%);
+  --text-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--bg-main);
+}
+
+//* THEMES
+.theme-dark {
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-toggle: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+  --key-bg: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-bg-toggle: hsl(6, 63%, 50%);
+  --key-shadow-dark: hsl(6, 70%, 34%);
+  --key-bg-light: hsl(30, 25%, 89%);
+  --key-shadow-grayish: hsl(28, 16%, 65%);
+  --text: hsl(221, 14%, 31%);
+  --text-white: hsl(0, 0%, 100%);
+}
+
+.theme-white {
+  --bg-main: hsl(0, 0%, 90%);
+  --bg-toggle: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+  --key-bg: hsl(185, 42%, 37%);
+  --key-shadow: hsl(185, 58%, 25%);
+  --key-bg-toggle: hsl(25, 98%, 40%);
+  --key-shadow-dark: hsl(25, 99%, 27%);
+  --key-bg-light: hsl(45, 7%, 89%);
+  --key-shadow-grayish: hsl(35, 11%, 61%);
+  --text: hsl(60, 10%, 19%);
+  --text-white: hsl(0, 0%, 100%);
+}
+
+.theme-future {
+  --bg-main: hsl(268, 75%, 9%);
+  --bg-toggle: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
+  --key-bg: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --key-bg-toggle: hsl(176, 100%, 44%);
+  --key-shadow-dark: hsl(177, 92%, 70%);
+  --key-bg-light: hsl(268, 47%, 21%);
+  --key-shadow-grayish: hsl(290, 70%, 36%);
+  --text: hsl(52, 100%, 62%);
+  --very-dark-blue: hsl(198, 20%, 13%);
+  --text-white: hsl(0, 0%, 100%);
+}

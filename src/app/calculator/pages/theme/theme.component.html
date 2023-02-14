@@ -1,0 +1,22 @@
+<section class="theme">
+  <h1 class="theme__title">Calc</h1>
+
+  <div class="switch">
+    <div class="switch__numbers">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+    <div class="switch__text">Theme</div>
+    <div class="switch__range">
+      <input
+        #input
+        type="range"
+        min="1"
+        max="3"
+        value="1"
+        (click)="changeTheme(input.value)"
+      />
+    </div>
+  </div>
+</section>
