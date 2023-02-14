@@ -15,7 +15,7 @@
 
   .number__btn {
     border: none;
-    width: 90px;
+    width: 95px;
     height: 54px;
     background-color: var(--key-bg-light);
     box-shadow: 0 4px 0 var(--key-shadow-grayish);
@@ -35,7 +35,7 @@
   }
 
   .number__btn:active {
-    background-color: var(--key-shadow);
+    background-color: var(--text-secondary);
   }
 
   .number__btn--bg:active,
