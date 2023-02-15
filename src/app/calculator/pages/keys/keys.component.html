@@ -1,22 +1,38 @@
 <section class="keys">
   <div class="numbers">
-    <button class="number__btn">7</button>
-    <button class="number__btn">8</button>
-    <button class="number__btn">9</button>
-    <button class="number__btn number__btn--bg custom">del</button>
-    <button class="number__btn">4</button>
-    <button class="number__btn">5</button>
-    <button class="number__btn">6</button>
-    <button class="number__btn">+</button>
-    <button class="number__btn">1</button>
-    <button class="number__btn">2</button>
-    <button class="number__btn">3</button>
-    <button class="number__btn">-</button>
-    <button class="number__btn">.</button>
-    <button class="number__btn">0</button>
-    <button class="number__btn">/</button>
-    <button class="number__btn">x</button>
-    <button class="number__btn btn__item__reset custom">reset</button>
-    <button class="number__btn btn__item__result" id="igual">=</button>
+    <button class="number__btn" (click)="onKeyPress('7')">7</button>
+    <button class="number__btn" (click)="onKeyPress('8')">8</button>
+    <button class="number__btn" (click)="onKeyPress('9')">9</button>
+    <button
+      class="number__btn number__btn--bg custom"
+      (click)="onKeyPress('', 'del')"
+    >
+      del
+    </button>
+    <button class="number__btn" (click)="onKeyPress('4')">4</button>
+    <button class="number__btn" (click)="onKeyPress('5')">5</button>
+    <button class="number__btn" (click)="onKeyPress('6')">6</button>
+    <button class="number__btn" (click)="onKeyPress('', '+')">+</button>
+    <button class="number__btn" (click)="onKeyPress('1')">1</button>
+    <button class="number__btn" (click)="onKeyPress('2')">2</button>
+    <button class="number__btn" (click)="onKeyPress('3')">3</button>
+    <button class="number__btn" (click)="onKeyPress('', '-')">-</button>
+    <button class="number__btn" (click)="onKeyPress('', '.')">.</button>
+    <button class="number__btn" (click)="onKeyPress('0')">0</button>
+    <button class="number__btn" (click)="onKeyPress('', '/')">/</button>
+    <button class="number__btn" (click)="onKeyPress('', 'x')">x</button>
+    <button
+      class="number__btn btn__item__reset custom"
+      (click)="onKeyPress('', 'reset')"
+    >
+      reset
+    </button>
+    <button
+      class="number__btn btn__item__result"
+      id="igual"
+      (click)="onKeyPress('', '=')"
+    >
+      =
+    </button>
   </div>
 </section>
