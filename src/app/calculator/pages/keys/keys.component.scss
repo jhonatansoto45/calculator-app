@@ -29,7 +29,7 @@
   .number__btn--bg {
     background-color: var(--key-bg);
     box-shadow: 0 4px 0 var(--key-shadow);
-    color: var(--text-white);
+    color: var(--text-secondary);
     text-transform: uppercase;
     font-size: 1.4rem;
   }
@@ -41,31 +41,33 @@
   .number__btn--bg:active,
   .btn__item__reset:active {
     background-color: var(--key-bg);
+    filter: brightness(1.50);
   }
 
   .btn__item__reset {
-    grid-column: 1 /3;
+    grid-column: 1 / 3;
     width: 210px;
     height: 60px;
     border-radius: 8px;
     background-color: var(--key-bg);
     box-shadow: 0 4px 0 var(--key-shadow);
-    color: var(--text-white);
+    color: var(--text-secondary);
     text-transform: uppercase;
     font-size: 1.4rem;
   }
 
   .btn__item__result {
-    grid-column: 3 /5;
+    grid-column: 3 / 5;
     width: 210px;
     height: 60px;
     border-radius: 8px;
     background-color: var(--key-bg-toggle);
     box-shadow: 0 4px 0 var(--key-shadow-dark);
-    color: var(--text-white);
+    color: var(--text-secondary);
   }
 
   .btn__item__result:active {
     background-color: var(--key-bg-toggle);
+    filter: brightness(1.50);
   }
 }

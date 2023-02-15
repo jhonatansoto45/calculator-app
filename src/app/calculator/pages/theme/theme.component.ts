@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CalculatorService } from '../../../service/calculator.service';
 
 @Component({
   selector: 'app-theme',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./theme.component.scss'],
 })
 export class ThemeComponent {
+  constructor(private calcService: CalculatorService) {}
+
   changeTheme(id: string): void {
     const theme = Number(id);
 
@@ -27,5 +30,7 @@ export class ThemeComponent {
         document.body.classList.add('theme-dark');
         break;
     }
+
+    this.calcService.theme$.next(document.body.classList[0]);
   }
 }
