@@ -102,20 +102,14 @@ export class KeysComponent implements OnInit, OnDestroy {
   }
 
   private changePropertys(theme: string): void {
-    if (theme === Theme.future) {
-      Array.from(document.getElementsByClassName('custom')).forEach(
-        (element) => {
-          (element as HTMLElement).style.color = 'var(--text-white)';
-        }
-      );
-      document.getElementById('igual')!.style.color = 'var(--very-dark-blue)';
-    } else {
-      Array.from(document.getElementsByClassName('custom')).forEach(
-        (element) => {
-          (element as HTMLElement).style.color = 'var(--text-secondary)';
-        }
-      );
-      document.getElementById('igual')!.style.color = 'var(--text-secondary)';
-    }
+    Array.from(document.getElementsByClassName('custom')).forEach((element) => {
+      if (theme === Theme.future) {
+        (element as HTMLElement).style.color = 'var(--text-white)';
+        document.getElementById('igual')!.style.color = 'var(--very-dark-blue)';
+      } else {
+        (element as HTMLElement).style.color = 'var(--text-secondary)';
+        document.getElementById('igual')!.style.color = 'var(--text-secondary)';
+      }
+    });
   }
 }
