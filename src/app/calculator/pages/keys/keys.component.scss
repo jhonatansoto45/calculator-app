@@ -8,6 +8,7 @@
 }
 
 .numbers {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 120px);
   grid-template-rows: repeat(5, 96px);
@@ -41,7 +42,7 @@
   .number__btn--bg:active,
   .btn__item__reset:active {
     background-color: var(--key-bg);
-    filter: brightness(1.50);
+    filter: brightness(1.5);
   }
 
   .btn__item__reset {
@@ -68,6 +69,22 @@
 
   .btn__item__result:active {
     background-color: var(--key-bg-toggle);
-    filter: brightness(1.50);
+    filter: brightness(1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .numbers {
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 96px);
+
+    .number__btn {
+      width: 70px;
+    }
+
+    .btn__item__reset,
+    .btn__item__result {
+      width: 150px;
+    }
   }
 }

@@ -1,27 +1,42 @@
-# CalculatorApp
+# Frontend Mentor - Calculator app solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+### The challenge
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Users should be able to:
 
-## Code scaffolding
+- See the size of the elements adjust based on their device's screen size
+- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Adjust the color theme based on their preference
+- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Screenshot
 
-## Build
+![](./src/assets/screens/screencapture-1.png)
+![](./src/assets/screens/screencapture-2.png)
+![](./src/assets/screens/screencapture-3.png)
+![](./src/assets/screens/screencapture-mobile.png)
+![](./src/assets/screens/screencapture-mobile-2.png)
+![](./src/assets/screens/screencapture-mobile-3.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Links
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Solution URL: [here](https://github.com/jhonatansoto45/calculator-app)
+- Live Site URL: [here](https://calculator-app-ten-plum.vercel.app/)
 
-## Running end-to-end tests
+### Built with
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Angular](https://angular.io/) - JS Framework
 
-## Further help
+## Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Frontend Mentor - [@jhonatansoto45](https://www.frontendmentor.io/profile/jhonatansoto45)
+- Twitter - [@Bautistajhonata](https://www.twitter.com/Bautistajhonata)
+
